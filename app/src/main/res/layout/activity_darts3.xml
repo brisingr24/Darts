@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Darts3">
+
+    <RelativeLayout
+        android:id="@+id/currentPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="294dp">
+
+        <TextView
+            android:id="@+id/playername"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="182dp"
+            android:backgroundTintMode="src_over"
+            android:padding="10dp"
+            android:text="Player Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/points"
+            android:layout_width="301dp"
+            android:layout_height="61dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="114dp"
+            android:background="@drawable/player_border"
+            android:ems="10"
+            android:inputType="number"
+            android:text="ENTER SCORE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="325dp"
+            android:layout_height="66dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="33dp"
+            android:text="NEXT TURN"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Round"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="172dp"
+            android:text="Round"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="367dp"
+            android:layout_height="271dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/player_border" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/scoreBoard"
+            android:layout_width="match_parent"
+            android:layout_height="446dp"
+            android:background="@color/teal_700"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>
